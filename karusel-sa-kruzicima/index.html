@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Karusel sa kruzicima</title>
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+	<div id="carousel" class="carousel slide carousel-fade">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel" data-slide-to="1"></li>
+			<li data-target="#carousel" data-slide-to="2"></li>
+		</ol>
+		<!-- Karusel stranice -->
+		<div class="carousel-inner">
+			<div class="active item"><img src="slike/akvarijum-1.jpg" alt="akvarijum"></div>
+			<div class="item"><img src="slike/akvarijum-2.jpg" alt="akvarijum"></div>
+			<div class="item"><img src="slike/akvarijum-3.jpg" alt="akvarijum"></div>
+		</div>
+		<!-- Carousel nav -->
+		<a href="#carousel" class="carousel-control left" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#carousel" class="carousel-control right" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right">
+		</a>
+	</div>
+
+<script src="jquery/jquery-1.11.3.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script>
+<script src="js/skript.js"></script>
+</body>
+</html>
