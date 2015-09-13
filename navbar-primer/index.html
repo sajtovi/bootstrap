@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Navbar primer</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mojstil.css">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<!-- Staticki navbar -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar top-bar"></span>
+						<span class="icon-bar middle-bar"></span>
+						<span class="icon-bar bottom-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Ime projekta</a>
+				</div><!-- navbar-header -->
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Početna</a></li>
+						<li><a href="#">O nama</a></li>
+						<li><a href="#">Kontakt</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Padajući meni<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Opcija 1</a></li>
+								<li><a href="#">Opcija 2</a></li>
+								<li><a href="#">Opcija 3</a></li>
+								<li><a href="#">Opcija 4</a></li>
+								<li><a href="#">Opcija 5</a></li>
+							</ul><!-- dropdown-menu -->
+						</li><!-- dropdown -->
+					</ul><!-- nav navbar-nav -->
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="">Link 1</a></li>
+						<li><a href="">Link 2</a></li>
+						<li><a href="">Link 3</a></li>
+					</ul>
+
+
+				</div>
+			</div><!-- container-fluid -->
+		</nav><!-- navbar navbar-default -->
+		
+		<div class="jumbotron">
+			<h1>Navbar primer</h1>
+			<p>Ovo je primer koji ilustruje kako se pravi navbar-default koji je statičan i na vrhu stranice.</p>
+			<a href="" class="btn btn-lg btn-primary" href="#" role="button">Navbar dokumentacija &raquo;</a>
+		</div><!-- jumbotron -->
+	</div><!-- container -->
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mojskript.js"></script>
+</body>
+</html>
