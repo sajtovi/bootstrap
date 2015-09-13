@@ -1,1 +1,0 @@
-Mali, jednostavan primer za rad sa navigacionim barom. Definisali smo jedan default navbar i jedan kome je pozicija zdesna (navbar-right).
