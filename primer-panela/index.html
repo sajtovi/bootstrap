@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Naslov stranice</title>
+	<title>Primer panela</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/mojstil.css">
 	<!--[if lt IE 9]>
@@ -14,12 +14,24 @@
 	<![endif]-->
 </head>
 <body>
-	<div class="container">
-		<div class="page-header">
-			<h1>Naslov u bootstrapu <small>a ovo je podnaslov</small></h1>
-		</div>
+<div class="container">
+	<div class="page-header">
+		<h1>Primer sa panelom <small>panel se koristi da prikaže tekst ili sliku unutar box-a sa okruglim ivicama</small></h1>
 	</div>
-	
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			PAŽNJA
+		</div>
+		<div class="panel-body">
+			Mali primer panela.
+		</div>
+		<div class="panel-footer">
+			<a href="#" class="btn btn-danger btn-sm">U redu</a>
+			<a href="#" class="btn btn-default btn-sm">Poništi</a>			
+		</div>
+	</div><!-- panel panel-default -->
+</div><!-- container -->
+
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/mojskript.js"></script>
