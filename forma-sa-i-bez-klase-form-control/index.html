@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Forma u bootstrapu sa ili bez klase .form-control</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mojstil.css">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<h1>Prosta forma sa klasom <code>.form-control</code></h1>
+		<div class="row">
+			<div class="col-md-12">
+				<p class="lead">Hajde da formatiramo elemente forme koristeći ili ne koristeći klasu .form-control</p>
+				<p>Elementi kao što su: <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code> e <code>&lt;select&gt;</code> ako unutar njih uključimo klasu <code>.form-control</code> onda će njihova dužina biti 100% <code>width: 100%;</code> (desna kolona).</p>
+				<h2>Nekoliko primera</h2>
+			</div><!-- col-md-12 -->
+			<div class="col-md-6">
+				<h3>Elementi bez klase <code>.form-control</code></h3>			
+				<div class="form-group">
+					<label for="Ime">Ime</label>
+					<input type="text" name="Ime" id="Ime" placeholder="Unesite Vaše ime" />
+				</div><!-- form-group -->
+				<div class="form-group">
+					<label for="Email">Email</label>
+					<input type="text" name="Email" id="Email" placeholder="Unesite Vaš email" />
+				</div><!-- form-group -->
+				<button type="submit" class="btn btn-default">Pošalji</button>
+				<p>Obratite pažnju kako <code>&lt;input&gt;</code> elementi nemaju dužinu 100% zbog nedostatka klase <code>.form-control</code></p>
+			</div><!-- col-md-6 -->
+			<div class="col-md-6">
+				<h3>Elementi sa klasom <code>.form-control</code></h3>
+				<div class="form-group">
+					<label for="Ime">Ime</label>
+					<input type="text" class="form-control" name="Ime" id="Ime" placeholder="Unesite Vaše ime" />
+				</div><!-- form-group -->
+				<div class="form-group">
+					<label for="Email">Email</label>
+					<input type="text" class="form-control" name="Email" id="Email" placeholder="Unesite Vaš email" />
+				</div><!-- form-group -->
+				<button type="submit" class="btn btn-default">Pošalji</button>
+			</div><!-- col-md-6 -->
+		</div><!-- row -->
+		
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h2>Pogledajte kako je forma sa desne strane čitkija.</h2>
+			</div>
+		</div>
+	</div><!-- container -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mojskript.js"></script>
+</body>
+</html>
