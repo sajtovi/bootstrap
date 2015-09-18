@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Horizontalna forma primer</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mojstil.css">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label for="poljeIme" class="col-xs-2">Ime</label>
+			<div class="col-xs-10">
+				<input type="text" class="form-control" id="poljeIme" placeholder="Unesite ime" />
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="poljeEmail" class="col-xs-2">Email</label>
+			<div class="col-xs-10">
+				<input type="email" class="form-control" id="poljeEmail" placeholder="Unesite email" />
+			</div>
+		</div><!-- form-group -->
+		<div class="form-group">
+			<label for="poljeTelefon" class="col-xs-2">Telefon</label>
+			<div class="col-xs-10">
+				<input type="text" class="form-control" id="poljeTelefon" placeholder="Unesite br. telefona" />
+			</div>
+		</div><!-- form-group -->
+		<div class="form-group">
+			<label for="poljeOpis" class="col-xs-2">Opis</label>
+			<div class="col-xs-10">
+				<textarea class="form-control" id="poljeOpis" placeholder="Vaš komentar"></textarea>		
+			</div>
+		</div><!-- form-group -->
+		<div class="col-xs-10 col-xs-offset-2">
+			<button type="submit" class="btn btn-primary">Pošalji</button>
+			<button type="reset" class="btn btn-default">Poništi</button>			
+		</div>
+	</form>
+
+	</form>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mojskript.js"></script>
+</body>
+</html>
